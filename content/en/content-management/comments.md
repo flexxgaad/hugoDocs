@@ -37,7 +37,7 @@ For many websites, this is enough configuration. However, you also have the opti
 
 ### Render Hugo's built-in Disqus partial template
 
-Disqus has its own [internal template](/templates/internal/#disqus) available, to render it add the following code where you want comments to appear:
+Disqus has its own [internal template](/templates/embedded/#disqus) available, to render it add the following code where you want comments to appear:
 
 ```go-html-template
 {{ template "_internal/disqus.html" . }}
@@ -45,26 +45,28 @@ Disqus has its own [internal template](/templates/internal/#disqus) available, t
 
 ## Alternatives
 
-These are some alternatives to Disqus:
+Commercial commenting systems:
 
-* [Cactus Comments](https://cactus.chat/docs/integrations/hugo/) (Open Source, Matrix appservice, Docker install)
-* [Comentario](https://gitlab.com/comentario/comentario) (Open Source, self-hosted, Go/Angular, run locally, in Docker or Kubernetes)
-* [Comma](https://github.com/Dieterbe/comma) (Open source Go program that saves and loads comments to text files via REST api)
-* [Commento](https://commento.io/) (Open Source, available as a service, local install, or docker image)
-* [Giscus](https://giscus.app/) (Open source, comments system powered by GitHub Discussions)
-* [Graph Comment](https://graphcomment.com/)
-* [Hyvor Talk](https://talk.hyvor.com/) (Available as a service)
-* [IntenseDebate](https://intensedebate.com/)
-* [Isso](https://isso-comments.de/) (Self-hosted, Python) ([tutorial][issotutorial])
-* [Muut](https://muut.com/)
-* [Remark42](https://remark42.com/) (Open source, Golang, Easy to run docker)
-* [ReplyBox](https://getreplybox.com/)
-* [Staticman](https://staticman.net/)
-* [Talkyard](https://blog-comments.talkyard.io/) (Open source, & serverless hosting)
-* [Utterances](https://utteranc.es/) (Open source, GitHub comments widget built on GitHub issues)
+- [Graph Comment](https://graphcomment.com/)
+- [Hyvor Talk](https://talk.hyvor.com/)
+- [IntenseDebate](https://intensedebate.com/)
+- [ReplyBox](https://getreplybox.com/)
+
+Open-source commenting systems:
+
+- [Cactus Comments](https://cactus.chat/docs/integrations/hugo/)
+- [Comentario](https://gitlab.com/comentario/comentario/)
+- [Comma](https://github.com/Dieterbe/comma/)
+- [Commento](https://commento.io/)
+- [Giscus](https://giscus.app/)
+- [Isso](https://isso-comments.de/)
+- [Remark42](https://remark42.com/)
+- [Staticman](https://staticman.net/)
+- [Talkyard](https://blog-comments.talkyard.io/)
+- [Utterances](https://utteranc.es/)
 
 [configuration]: /getting-started/configuration/
-[disquspartial]: /templates/internal/#disqus
+[disquspartial]: /templates/embedded/#disqus
 [disqussetup]: https://disqus.com/profile/signup/
 [forum]: https://discourse.gohugo.io
 [front matter]: /content-management/front-matter/
